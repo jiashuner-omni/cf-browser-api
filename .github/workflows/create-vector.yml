@@ -5,10 +5,8 @@ jobs:
   create:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Create Index via Wrangler
+      - name: Create Index
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          # 強制指令：名字叫 js-playground，維度 1024
           command: vectorize create js-playground --dimensions=1024 --metric=cosine
