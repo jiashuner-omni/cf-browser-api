@@ -1,0 +1,17 @@
+name = "cf-browser-api"
+main = "src/index.js"
+compatibility_date = "2024-05-11"
+compatibility_flags = ["nodejs_compat"]
+
+browser = { binding = "BROWSER" }
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "你的_R2_名稱"
+
+[[vectorize]]
+binding = "VECTOR_INDEX"
+index_name = "你的_向量資料庫_名稱"
+
+[ai]
+binding = "AI"
