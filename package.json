@@ -1,5 +1,6 @@
 {
-  "name": "cf-browser-api",
+  "name": "cf-browser-worker",
+  "version": "1.0.0",
   "type": "module",
   "dependencies": {
     "@cloudflare/puppeteer": "latest"
