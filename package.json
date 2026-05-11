@@ -1,4 +1,9 @@
 {
+  "name": "js-playground",
+  "version": "1.0.0",
+  "devDependencies": {
+    "wrangler": "latest"
+  },
   "dependencies": {
     "@cloudflare/puppeteer": "latest"
   }
