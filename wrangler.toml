@@ -11,7 +11,7 @@ bucket_name = "js-playground"
 
 [[vectorize]]
 binding = "VECTOR_INDEX"
-index_name = "js-playground"  # 這就是你要的名字
+index_name = "js-playground"
 
 [ai]
 binding = "AI"
