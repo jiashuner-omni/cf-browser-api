@@ -3,19 +3,19 @@ main = "src/index.js"
 compatibility_date = "2024-05-11"
 compatibility_flags = ["nodejs_compat"]
 
-# 瀏覽器渲染綁定
+# 瀏覽器渲染綁定 (Browser Rendering)
 browser = { binding = "BROWSER" }
 
-# R2 儲存桶綁定
+# R2 截圖儲存桶綁定
 [[r2_buckets]]
 binding = "BUCKET"
 bucket_name = "js-playground"
 
-# Vectorize 向量資料庫綁定
+# Vectorize 向量資料庫綁定 (對接你手動創好的那個)
 [[vectorize]]
 binding = "VECTOR_INDEX"
 index_name = "js-playground"
 
-# Workers AI 綁定
+# Workers AI 綁定 (Markdown & Embedding)
 [ai]
 binding = "AI"
