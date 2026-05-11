@@ -1,4 +1,4 @@
-name = "js-playground" # 這是 Worker 的名字
+name = "js-playground"
 main = "src/index.js"
 compatibility_date = "2024-05-11"
 compatibility_flags = ["nodejs_compat"]
@@ -11,7 +11,7 @@ bucket_name = "js-playground"
 
 [[vectorize]]
 binding = "VECTOR_INDEX"
-index_name = "web-knowledge-index" # 直接用你帳號裡現成的！
+index_name = "js-playground" # 這裡就是你要新創的那顆
 
 [ai]
 binding = "AI"
