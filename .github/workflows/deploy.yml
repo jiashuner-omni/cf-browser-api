@@ -3,12 +3,20 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: # 增加手動執行按鈕，方便測試
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Deploy
+      
+      - name: Install Dependencies
+        run: npm install # 確保雲端機器有安裝 package.json 裡的 puppeteer
+        
+      - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          # 如果你的 wrangler.toml 在根目錄，這行可以確保執行
+          command: deploy
