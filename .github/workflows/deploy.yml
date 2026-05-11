@@ -1,16 +1,11 @@
 name: Deploy Worker
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
+on: [push, workflow_dispatch]
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install dependencies
+      - name: Install
         run: npm install
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
