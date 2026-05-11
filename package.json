@@ -1,0 +1,7 @@
+{
+  "name": "cf-browser-api",
+  "type": "module",
+  "dependencies": {
+    "@cloudflare/puppeteer": "latest"
+  }
+}
